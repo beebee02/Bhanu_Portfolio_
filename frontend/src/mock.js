@@ -62,20 +62,6 @@ export const HOBBIES = [
   { title: 'DIY Crafts', stat: 'paper, crochet & design', hint: 'custom handcrafted builds', icon: 'Scissors', accent: '#ec4899' },
 ];
 
-// Spotify music section card
-export const NOW_PLAYING_TRACK = {
-  track: 'I Was Never There',
-  artist: 'The Weeknd',
-  album: 'My Dear Melancholy,',
-  cover: `${PUBLIC_URL}/weeknd-spotify.jpeg`,
-  lyricsCard: `${PUBLIC_URL}/weeknd-spotify.jpeg`,
-  audio: `${PUBLIC_URL}/music/i-was-never-there.mp3`, // Fixed for audio playback
-  href: 'https://open.spotify.com/track/1cKHdTo9u0ZymJdPGSh6nq',
-  quote: "If I keep going, I won't make it. And it's all because of you.",
-  progress: 68,
-  elapsed: '2:41',
-  total: '4:01',
-};
 
 export const TAGS = ['SQL', 'PYTHON', 'TABLEAU', 'FORECASTING', 'MACHINE LEARNING'];
 
