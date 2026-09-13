@@ -41,6 +41,13 @@ export const INTRO = {
 };
 
 // Top floating pill status
+export const NOW_PLAYING = {
+  status: 'BUILDING',
+  title: 'My own business from scratch',
+  hint: 'Deploying soon',
+};
+
+// Spotify music section card
 export const NOW_PLAYING_TRACK = {
   track: 'I Was Never There',
   artist: 'The Weeknd',
