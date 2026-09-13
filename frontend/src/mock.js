@@ -1,7 +1,7 @@
 // Mock data for Bhanu Teja's portfolio
 
 // At the top of frontend/src/mock.js
-const PUBLIC_URL = process.env.PUBLIC_URL || '/Bhanu_Teja';
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
 export const HELLO_LANGS = [
   'Hello',
   'నమస్తే',
