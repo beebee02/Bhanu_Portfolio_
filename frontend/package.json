@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://beebee02.github.io/Bhanu_Portfolio_/",
   "dependencies": {
     "@hookform/resolvers": "5.0.1",
     "@radix-ui/react-accordion": "1.2.8",
@@ -66,6 +67,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "predeploy": "craco build",
+    "deploy": "gh-pages -d build",
     "test": "craco test"
   },
   "browserslist": {
