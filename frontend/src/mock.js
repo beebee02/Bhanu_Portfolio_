@@ -1,5 +1,7 @@
 // Mock data for Bhanu Teja's portfolio
 
+// At the top of frontend/src/mock.js
+const PUBLIC_URL = process.env.PUBLIC_URL || '/Bhanu_Portfolio_';
 export const HELLO_LANGS = [
   'Hello',
   'నమస్తే',
@@ -39,12 +41,18 @@ export const INTRO = {
 };
 
 // Top floating pill status
-export const NOW_PLAYING = {
-  status: 'BUILDING',
-  title: 'My own business from scratch',
-  hint: 'Deploying soon',
+export const NOW_PLAYING_TRACK = {
+  track: 'I Was Never There',
+  artist: 'The Weeknd',
+  album: 'My Dear Melancholy,',
+  cover: `${PUBLIC_URL}/weeknd-spotify.jpeg`,
+  lyricsCard: `${PUBLIC_URL}/weeknd-spotify.jpeg`,
+  href: 'https://open.spotify.com/track/1cKHdTo9u0ZymJdPGSh6nq',
+  quote: "If I keep going, I won't make it. And it's all because of you.",
+  progress: 68,
+  elapsed: '2:41',
+  total: '4:01',
 };
-
 export const HOBBIES = [
   { title: 'Photography', stat: '2.3K frames shot', hint: '35mm / street', icon: 'Camera', accent: '#ff8a3d' },
   { title: 'Cafe-hopping', stat: '47 spots mapped', hint: 'flat white obsessed', icon: 'Coffee', accent: '#d97706' },
@@ -59,8 +67,9 @@ export const NOW_PLAYING_TRACK = {
   track: 'I Was Never There',
   artist: 'The Weeknd',
   album: 'My Dear Melancholy,',
-  cover: '/weeknd-spotify.jpeg',
-  lyricsCard: '/weeknd-spotify.jpeg',
+  cover: `${PUBLIC_URL}/weeknd-spotify.jpeg`,
+  lyricsCard: `${PUBLIC_URL}/weeknd-spotify.jpeg`,
+  audio: `${PUBLIC_URL}/music/i-was-never-there.mp3`, // Fixed for audio playback
   href: 'https://open.spotify.com/track/1cKHdTo9u0ZymJdPGSh6nq',
   quote: "If I keep going, I won't make it. And it's all because of you.",
   progress: 68,
@@ -71,7 +80,7 @@ export const NOW_PLAYING_TRACK = {
 export const TAGS = ['SQL', 'PYTHON', 'TABLEAU', 'FORECASTING', 'MACHINE LEARNING'];
 
 export const PROJECTS = [
-  {
+{
     id: 'marketplace-pulse',
     slug: 'marketplace-pulse',
     badge: '20+ KPIs',
@@ -81,7 +90,7 @@ export const PROJECTS = [
     subtitle: 'Uber Corporate Headquarters',
     caption:
       'Built at Uber: Centralized 20+ operational and customer KPIs into a unified framework to detect driver-rider performance gaps before they impacted bottom-line revenue.',
-    image: '/uber-project.jpg',
+    image: `${PUBLIC_URL}/uber-project.jpg`,
     year: '2026',
     duration: '12 WEEKS',
     stack: ['SQL', 'Python', 'Tableau', 'Snowflake'],
@@ -278,7 +287,7 @@ export const EXPERIENCE = [
   {
     company: 'University of North Texas',
     role: 'Graduate Assistant',
-    period: '2025 \u2014 2026',
+    period: '2025 — 2026',
     bullets: [
       'Assisted faculty with course delivery for a graduate analytics course, grading assignments and holding office hours for 40+ students.',
       'Supported research data collection and cleaning using Python and SQL, prepping datasets for faculty-led analytics projects.',
