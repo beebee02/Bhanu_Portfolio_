@@ -40,7 +40,7 @@ const Intro = () => {
           >
             {/* View Resume Button */}
             <a
-              href="/resume.pdf"
+              href={`${process.env.PUBLIC_URL || '/Bhanu_Portfolio_'}/resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="hover"
