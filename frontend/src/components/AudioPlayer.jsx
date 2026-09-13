@@ -5,7 +5,7 @@ const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
-  const audioSrc = `${process.env.PUBLIC_URL || '/Bhanu_Portfolio_'}/ambient.mp3`;
+  const audioSrc = `${process.env.PUBLIC_URL || '/Bhanu_Teja'}/ambient.mp3`;
 
   const toggleSound = () => {
     if (!audioRef.current) return;
