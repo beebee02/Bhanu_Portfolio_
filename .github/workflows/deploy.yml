@@ -38,7 +38,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          PUBLIC_URL: '/Bhanu_Portfolio_'
+          PUBLIC_URL: '/Bhanu_Teja'
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
